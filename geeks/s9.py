@@ -13,3 +13,13 @@ for x in l:
     s.append(f)
 
 print(s)
+
+# s = "welcome to geeksforgeeks"
+# print("String before:", s)
+# a = s.split()
+# res = []
+# for i in a:
+#     x = i[0].upper()+i[1:-1]+i[-1].upper()
+#     res.append(x)
+# res = " ".join(res)
+# print("String after:", res)

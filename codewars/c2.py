@@ -33,7 +33,14 @@
 # def lovefunc(flower1, flower2):
 #     return flower1 % 2 != flower2 % 2
 
-def find_needle(haystack):
-    return haystack.index('needle')
+# def find_needle(haystack):
+#     return haystack.index('needle')
 
-print(find_needle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]))    
+# print(find_needle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]))    
+
+n=[1, 2, 3]
+a=[]
+for x in n:
+    x = x*2
+    a.append(x)
+print(a)    

@@ -21,11 +21,16 @@
 #     return " ".join(text[::-1].split()[::-1])
 
 
+# def reverse_words(text):
+# rev = ""
+# for x in text:
+#     rev = x + rev
+# return rev
 def reverse_words(text):
-    rev = ""
-    for x in text:
-        rev = x + rev
-    return rev
+    li = []
+    for x in text.split(" "):
+        li.append(x[::-1])
+    return " ".join(li)
 
 
 print(reverse_words("This is an example!"))

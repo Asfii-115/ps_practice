@@ -15,15 +15,45 @@
 # print(is_square(25))
 
 
-def accum(st):
-    s = ""
-    x = 0
-    i = 0
-    while len(st) != 0:
-        s += st[x]
-        x += 1
-        i -= 1
-    return s
+# def accum(st):
+#     s = ""
+#     x = 0
+#     i = 0
+#     while len(st) != 0:
+#         s += st[x]
+#         x += 1
+#         i -= 1
+#     return s
 
 
-print(accum("abcd"))
+# print(accum("abcd"))
+
+
+def solution(nums):
+    if nums:
+        nums.sort()
+        return nums
+    else:
+        return []
+
+
+print(solution(None))
+
+
+def capitals(word):
+    # your code here
+    li = []
+    for x in range(len(word)):
+        if word[x].isupper():
+            li.append(x)
+    return li
+
+
+print(capitals("CodEWaRs"))
+
+
+def small_enough(array, limit):
+    return max(array) <= limit
+
+
+print(small_enough([66, 100], 200))

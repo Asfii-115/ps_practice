@@ -26,11 +26,20 @@
 # for x in text:
 #     rev = x + rev
 # return rev
-def reverse_words(text):
-    li = []
-    for x in text.split(" "):
-        li.append(x[::-1])
-    return " ".join(li)
+# def reverse_words(text):
+#     li = []
+#     for x in text.split(" "):
+#         li.append(x[::-1])
+#     return " ".join(li)
 
 
-print(reverse_words("This is an example!"))
+# print(reverse_words("This is an example!"))
+
+
+def remove_smallest(numbers):
+    m = min(numbers)
+    numbers.remove(m)
+    return numbers
+
+
+print(remove_smallest([1, 2, 3, 4, 5]))

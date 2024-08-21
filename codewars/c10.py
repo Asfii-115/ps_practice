@@ -19,13 +19,13 @@
 # print(longest("xyaabbbccccdefww", "xxxxyyyyabklmopq"))
 
 
-# def sq(n):
-#     i = 1
-#     while i < n:
-#         if n / i == i:
-#             return (i + 1) ** 2
-#         else:
-#             i += 1
+def sq(n):
+    i = 1
+    while i < n:
+        if n / i == i:
+            return (i + 1) ** 2
+        else:
+            i += 1
 
 
 # print(sq(121))

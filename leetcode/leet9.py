@@ -8,7 +8,7 @@ print(move([0, 1, 0, 3, 12]))
 
 
 class Solution:
-    def moveZeroes(self, nums: List[int]) -> None:
+    def moveZeroes(self, nums: list[int]) -> None:
         left = 0
 
         for right in range(len(nums)):

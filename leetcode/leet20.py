@@ -13,10 +13,7 @@
 
 
 def containsDuplicate(nums):
-    for x in range(len(nums)):
-        if nums[x] in nums[x + 1 :]:
-            return True
-    return False
+    return list(dict.fromkeys(nums)) != nums
 
 
-print(containsDuplicate([1, 1, 1, 3, 3, 4, 3, 2, 4, 2]))
+print(containsDuplicate([3, 1]))

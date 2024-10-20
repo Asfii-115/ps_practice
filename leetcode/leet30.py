@@ -47,3 +47,18 @@ def roman(s):
 
 
 print(roman("LVIII"))
+
+
+def long(arr):
+    li = ""
+    v = sorted(arr)
+    first = v[0]
+    last = v[-1]
+    for i in range(min(len(first), len(last))):
+        if first[i] != last[i]:
+            return li
+        li += first[i]
+    return li
+
+
+print(long(["flower", "flow", "flight"]))

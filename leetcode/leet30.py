@@ -80,3 +80,27 @@ s = "paper"
 t = "title"
 print(s.index("p"))
 print(t.index("t"))
+
+
+def rev_vowel(s):
+    li = []
+    for x in s:
+        li.append(x)
+    for i in li:
+        if i in "AEIOUaeiou":
+            li.remove(i)
+            li.append(i)
+    return li
+
+
+print(rev_vowel("Icecreame"))
+
+
+def ransom(r, m):
+    for x in r:
+        if x in m:
+            return True
+    return False
+
+
+print(ransom("aa", "ab"))

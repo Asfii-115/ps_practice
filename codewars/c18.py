@@ -74,4 +74,40 @@ def max_multiple(divisor, bound):
         else:
             bound-=1
     return bound
-print(max_multiple(37,200))        
+print(max_multiple(37,200))   
+
+import math 
+def factorial(n):
+    if n>12 or n<0:
+        raise ValueError
+    if n==0 or n==1:
+        return 1
+    else:
+        return math.factorial(n)
+    
+print(factorial(5))  
+
+def rfactorial(n):
+    if n == 0 or n == 1:  # Base case
+        return 1
+    else:
+        return n*rfactorial(n-1)
+
+print(rfactorial(5))
+
+def ifrl(n):
+    i = 1
+    for x in range(1,n+1):
+        i*=x
+    return i
+
+print(ifrl(5))    
+
+    
+def min_value(digits):
+    unique_list = []
+    for item in digits:
+        if item not in unique_list:
+            unique_list.append(item)
+    return int(''.join(sorted(list(map(str,unique_list)))))          
+print(min_value([4, 8, 1, 4]))

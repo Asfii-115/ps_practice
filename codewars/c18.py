@@ -32,3 +32,46 @@ def sum_digits(number):
     n = abs(number)
     return sum(int(x) for x in str(n))
 print(sum_digits(-32))
+
+def solve(s):
+    uc = 0
+    lc = 0
+    for x in s:
+        if x.islower():
+            lc+=1
+        else:
+            uc+=1
+    if lc>=uc:
+        return s.lower()
+    else:
+        return s.upper()
+    
+    
+
+def solved(s):
+    upper = 0
+    lower = 0
+    
+    for char in s:
+        if char.islower():
+            lower += 1
+        else:
+            upper += 1
+            
+    if upper == lower or lower > upper:
+        return s.lower()
+    else:
+        return s.upper()
+    
+print(solve('CODe'))    
+
+def max_multiple(divisor, bound):
+    #your code here
+    while bound>0:
+        n = bound/divisor
+        if n%1==0:
+            return bound
+        else:
+            bound-=1
+    return bound
+print(max_multiple(37,200))        

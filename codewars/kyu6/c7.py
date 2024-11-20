@@ -16,3 +16,8 @@ def count(string):
     return Counter(string)
 
 print(count('aba'))            
+
+l1 = [1,2,3]
+l2 = [1,2,3]
+
+print(list(zip(l1,l2)))

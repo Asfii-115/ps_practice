@@ -58,3 +58,31 @@ def char_count(s):
 
 
 print(char_count("catss"))
+
+
+def is_anagram(s1, s2):
+    return char_count(s1) == char_count(s2)
+
+
+print(is_anagram("cats", "tocs"))
+
+from collections import Counter
+
+
+def is_ana(s1, s2):
+    return Counter(s1) == Counter(s2)
+
+
+print(is_ana("dogs", "sgod"))
+
+
+def cc(s):
+    count = {}
+    for x in s:
+        if x not in count:
+            count[x] = 0
+        count[x] += 1
+    return count
+
+
+print(cc("asfii"))

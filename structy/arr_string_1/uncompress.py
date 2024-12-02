@@ -1,6 +1,6 @@
 def uncompress(s):
   numbers = '0123456789'
-  res = ''
+  res = '' #use a list instead
   i = 0
   j = 0
   while j < len(s):

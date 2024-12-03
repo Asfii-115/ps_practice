@@ -15,3 +15,4 @@ print(intersection(a, b))  # timeout O(m*n) complexity
 def intersection_again(a, b):
     set_a = set(a)
     return [x for x in b if x in set_a]  # O(n+m)
+
